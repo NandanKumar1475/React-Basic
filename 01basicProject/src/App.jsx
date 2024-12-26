@@ -6,7 +6,7 @@ import Navbar from './navbar'
 function App() {
   const data = [
      {
-      itemName:'nandan',
+      itemName:'andan',
       itemDate:20,
       itemMonth:'jun',
       itemYear: 2023
