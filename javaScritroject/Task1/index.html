@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first task</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Fill the form </h1>
+        <form id="formData">
+            <label for="name">First Name</label>
+            <input type="text" placeholder="First Name" name="fname" id="fname" minlength="3" required>
+
+            <label for="name">Last Name</label>
+            <input type="text" placeholder="Last Name" name="lname" id="lname" minlength="3">
+
+            <label for="name">Email</label>
+            <input type="email" placeholder="Email " name="email" id="email" required minlength="10">
+
+            <label for="name">phone Number</label>
+            <input type="tel" placeholder=" Mobile Number" id="number"
+            pattern="\d{10}" 
+            maxlength="10" 
+            
+            
+            >
+            <br>
+            <button>Submit</button>
+        </form>
+        
+    </main>
+    <div id="displayData">
+
+    </div>
+    <script src="liveUpdate.js"></script>
+</body>
+</html>

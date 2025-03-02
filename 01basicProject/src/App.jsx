@@ -3,6 +3,8 @@ import './App.css'
 import Item from './comonents/Item'
 import ItemDate from './comonents/ItemDate'
 import Navbar from './navbar'
+import { useState } from 'react'
+import  FavColor from './comonents/FavColor'
 function App() {
   const data = [
      {
@@ -24,9 +26,9 @@ function App() {
       itemYear: 20232
      }
   ]
-  
+
   return (
-    <>
+    <div className='main'>
      <h1>Hello world</h1>
      <p>ram</p>
      <Item name={data[0].itemName}></Item>
@@ -35,7 +37,8 @@ function App() {
      <ItemDate date={data[1].itemDate} month={data[1].itemMonth} year={data[1].itemYear}  ></ItemDate>
      <Item name={data[2].itemName}></Item>
      <ItemDate date={data[2].itemDate} month={data[2].itemMonth} year={data[2].itemYear}></ItemDate>
-    </>
+     <FavColor></FavColor>
+    </div>
   )
 }
 export default App
